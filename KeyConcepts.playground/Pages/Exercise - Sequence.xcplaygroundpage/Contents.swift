@@ -32,6 +32,12 @@ let grey = Color(hue: 219, saturation: 1, brightness: 82, alpha: 100)
 let lightBlue = Color(hue: 205, saturation: 74, brightness: 77, alpha: 75)
 let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 
+canvas.defautBoderWith = 90
+canvas
+
+
+
+
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 

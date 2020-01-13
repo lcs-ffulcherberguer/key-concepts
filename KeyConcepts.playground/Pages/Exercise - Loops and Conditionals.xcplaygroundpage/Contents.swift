@@ -38,6 +38,14 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
+// create background colour
+canvas.fillColor = Color.deepOrange
+
+// No borders on shapes
+canvas.drawShapesWithBorders = true
+
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

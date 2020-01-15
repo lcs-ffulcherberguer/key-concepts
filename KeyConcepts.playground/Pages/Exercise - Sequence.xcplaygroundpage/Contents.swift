@@ -27,24 +27,30 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+
+
 // COLORS
 let grey = Color(hue: 219, saturation: 1, brightness: 82, alpha: 100)
 let lightBlue = Color(hue: 205, saturation: 74, brightness: 77, alpha: 75)
 let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 
-//Create the Ellipse
-canvas.defaultBorderWidth = 100
+
+//Create the red Ellipse
+canvas.defaultBorderWidth = 95
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightRed
-canvas.drawShapesWithFill = true
+canvas.drawShapesWithFill = false
 canvas.drawEllipse(at: Point(x: 200, y: 210), width: 270, height: 290)
 
-
-canvas.defaultBorderWidth = 90
+//Create the blue ellipse
+canvas.defaultBorderWidth = 95
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightBlue
-canvas.drawShapesWithBorders = false
-canvas.drawEllipse(at: Point(x: 300, y: 210), width: 300, height: 350)
+canvas.drawShapesWithBorders = true
+canvas.drawEllipse(at: Point(x: 350, y: 210), width: 300, height: 290)
+
+// Add text
+canvas.drawText
 
 
 

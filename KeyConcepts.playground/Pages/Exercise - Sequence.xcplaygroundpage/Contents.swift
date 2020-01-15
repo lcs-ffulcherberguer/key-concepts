@@ -27,7 +27,10 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
-
+//Create grey rectangle for the background
+canvas.fillColor = Color(hue: 219, saturation: 1, brightness: 82, alpha: 100)
+canvas.drawShapesWithBorders = false
+canvas.drawRectangle(at: Point(x:0, y:0), width: canvas.width, height: canvas.height)
 
 // COLORS
 let grey = Color(hue: 219, saturation: 1, brightness: 82, alpha: 100)
@@ -40,17 +43,31 @@ canvas.defaultBorderWidth = 95
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightRed
 canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 210), width: 270, height: 290)
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 270, height: 290)
 
 //Create the blue ellipse
 canvas.defaultBorderWidth = 95
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightBlue
 canvas.drawShapesWithBorders = true
-canvas.drawEllipse(at: Point(x: 350, y: 210), width: 300, height: 290)
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 300, height: 290)
 
 // Add text
-canvas.drawText
+canvas.drawText (message: "the jesus", at: Point(x: 10, y: 450), size: 40, kerning: 0.75)
+canvas.drawText(message: "and mary chain", at: Point(x: 10, y: 400), size: 40, kerning: 0.75)
+
+canvas.drawText(message: "friday", at: Point(x: 12, y: 575), size: 10)
+canvas.drawText(message: "december 4 1987", at: Point(x: 12, y: 560), size:10)
+canvas.drawText(message: "8 pm show", at: Point(x:12, y:545), size: 10)
+
+canvas.drawText(message: "with", at: Point(x: 120, y: 575), size: 10)
+canvas.drawText(message: "social distortion", at: Point(x: 120, y: 560), size: 10)
+canvas.drawText(message: "and opal", at: Point(x: 120, y: 545), size: 10)
+
+canvas.drawText(message: "hollywood palladium", at: Point(x: 260, y: 575),size: 10)
+canvas.drawText(message: "6215 sunset blvd.", at: Point(x: 260, y: 560), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x: 260, y: 545), size: 10)
+
 
 
 
